@@ -1,33 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 CSV Orbit - AI-Enabled Opportunity Radar
 
-## Getting Started
+> **Always in motion. Always in view.**  
+> AI-Enabled Opportunity Radar for Climate Smart Ventures
 
-First, run the development server:
+CSV Orbit automates the discovery, extraction, summarization, and scoring of development and funding opportunities from global sources such as **ADB, World Bank, Devex, UNDP, and USAID**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **Smart Source Management**: Add and manage funding opportunity sources with a business-friendly interface
+- **Real-time Data Collection**: Automated scraping from predefined and custom sources
+- **AI-Powered Scoring**: Relevance scoring and summarization of opportunities
+- **Interactive Dashboard**: Filter, sort, and track opportunities by status, deadline, and relevance
+- **Modern Tech Stack**: Built with Next.js 14, TypeScript, Tailwind CSS, and Turbopack
+
+## 🧱 Project Structure
+
+```
+src/
+├── app/
+│   ├── api/scrape/         # API endpoint for data collection
+│   └── page.tsx            # Main dashboard page
+├── components/
+│   ├── Header.tsx          # Application header
+│   ├── SourceManager.tsx   # Manage data sources
+│   └── Dashboard.tsx       # Opportunities dashboard
+└── types/
+    └── index.ts            # TypeScript type definitions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd martins-app
+```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies**
+```bash
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Start the development server**
+```bash
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Open your browser**
+Navigate to [http://localhost:3000](http://localhost:3000)
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server with Turbopack
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+
+### Key Components
+
+#### Source Manager
+- Add predefined sources (ADB, World Bank, Devex, UNDP, USAID)
+- Add custom sources with URL input
+- Real-time sync status and error handling
+- Opportunity count tracking
+
+#### Dashboard
+- Filter opportunities by relevance, urgency, and status
+- Sort by relevance score, deadline, or value
+- Update opportunity status (new → reviewed → applied → archived)
+- Summary statistics and metrics
+
+## 🌟 Features in Detail
+
+### Data Collection
+- **Predefined Sources**: Quick setup for major development organizations
+- **Custom Sources**: Add any website URL for opportunity discovery
+- **Sync Status**: Real-time feedback on data collection progress
+- **Error Handling**: Graceful handling of failed requests
+
+### Opportunity Management
+- **Relevance Scoring**: AI-powered scoring from 0-100%
+- **Status Tracking**: Track progress from discovery to application
+- **Deadline Monitoring**: Highlight urgent opportunities
+- **Tag System**: Categorize opportunities by type and focus area
+
+### User Experience
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Real-time Updates**: Live sync status and progress indicators
+- **Intuitive Interface**: Business-friendly design for non-technical users
+- **Export Ready**: Structured data for easy export and sharing
+
+## 🔮 Roadmap
+
+| Phase | Scope | Status |
+|-------|--------|---------|
+| **POC** | Basic scraping + dashboard | ✅ Complete |
+| **MVP** | AI summarization + alerts | 🔄 In Progress |
+| **Scale** | Multi-source automation | 📋 Planned |
+| **Intelligence** | Predictive analytics | 💭 Future |
+
+## 🤝 Contributing
+
+This is an internal Climate Smart Ventures project. For questions or contributions, contact the development team.
+
+## 📄 License
+
+Internal CSV prototype – not for public distribution.
+
+---
+
+**Built with ❤️ by Climate Smart Ventures Tech Team**
 
 ## Deploy on Vercel
 

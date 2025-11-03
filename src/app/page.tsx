@@ -9,7 +9,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            🌐 CSV Orbit
+            CSV Orbit
           </h1>
           <p className="text-xl text-gray-600 mb-1">
             AI-Enabled Opportunity Radar for Climate Smart Ventures

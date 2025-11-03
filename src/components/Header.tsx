@@ -4,7 +4,6 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
-            <div className="text-2xl">🌐</div>
             <nav className="hidden md:flex space-x-6">
               <a href="#dashboard" className="text-gray-600 hover:text-gray-900">
                 Dashboard
